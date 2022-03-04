@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+</head>
+<body>
+
+<h1>Lanzando Pasteles</h1>
+<img src="logo.png" width="300" alt="logo">
+<p>Somos la segunda mejor pastelería de la ciudad, la primera está en tu paladar</p>
+<p>Tenemos los mejores saboras, puedes elegir:</p>
+
+
+<ul>Sabores
+    <li>Vainilla...$400</li>
+    <li>Frutas...$450</li>
+    <li>Cheesecake...$350</li>
+    <li>Manzana...$453</li>
+    <li>Zanahoria...$300 (damos muestras gratis)</li>
+    <li>Tres leches... $500</li>
+</ul>
+
+<ul>Adornos
+    <li>Chocolate...$75</li>
+    <li>Letrero...$60</li>
+    <li>Comestible...$120</li>
+</ul>
+
+<h2>Elige tu combinación</h2>
+<label for="pasteles">Lo quiero de</label>
+<select id="pasteles" name="pasteles">
+    <option value="Frutas">Frutas</option>
+    <option value="Cheesecake">Cheesecake</option>
+    <option value="Manzana">Manzana</option>
+    <option value="Zanahoria">Zanahoria</option>
+    <option value="Vainilla">Vainilla</option>
+    <option value="Tres leches">Tres leches</option>
+    <option value=""></option>
+</select>
+
+
+<label for="adorno">con</label>
+<select id="adorno" name="adorno">
+    <option value="Chocolate">Chocolate</option>
+    <option value="Letrero">Letrero</option>
+    <option value="Comestible">Comestible</option>
+</select>
+
+<h2>Pa saber a donde entregar</h2>
+<form action="/accion.js" id="form1" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    <label for="tel1">Teléfono</label>
+    <input type="tel" id="tel1" name="tel1" maxlength="10">
+    <label for="correo1">Correo</label>
+    <input type="email" id="correo1" name="correo1">
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+<br>
+<footer>La pastelería se encuentra en Av Adolfo López Mateos 30, Ruiz Cortinez, 93166 Coatzintla, Ver. <br> De Lunes a domingo de 10am a 4pm</footer>
+
+</body>
+</html>
